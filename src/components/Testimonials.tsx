@@ -39,7 +39,7 @@ export default function Testimonials() {
                    <div className="font-medium text-primary">{t.author}</div>
                    <div className="text-sm text-secondary">{t.company}</div>
                  </div>
-                 <div className="px-3 py-1 bg-surface rounded-full text-xs font-semibold text-accent-cyan tracking-wider uppercase border border-surface-border">
+                 <div className="px-3 py-1 bg-surface rounded-full text-xs font-semibold text-accent-crimson tracking-wider uppercase border border-surface-border">
                    {t.metrics}
                  </div>
                </div>

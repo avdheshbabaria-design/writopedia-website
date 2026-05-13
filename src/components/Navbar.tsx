@@ -37,7 +37,7 @@ export default function Navbar() {
             <button className="text-sm font-medium text-secondary hover:text-primary transition-colors">
               Log in
             </button>
-            <button className="px-5 py-2.5 bg-primary text-background text-sm font-semibold rounded-full hover:bg-white/90 transition-all hover:scale-105 active:scale-95">
+            <button className="px-5 py-2.5 bg-accent-crimson text-white text-sm font-semibold rounded-full hover:bg-accent-rose transition-all hover:scale-105 active:scale-95 shadow-lg shadow-accent-crimson/20">
               Book Demo
             </button>
           </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
             <button className="w-full py-4 text-center border border-surface-border rounded-xl font-medium">
               Log in
             </button>
-            <button className="w-full py-4 text-center bg-primary text-background rounded-xl font-semibold">
+            <button className="w-full py-4 text-center bg-accent-crimson text-white rounded-xl font-semibold hover:bg-accent-rose transition-colors">
               Book Demo
             </button>
           </div>

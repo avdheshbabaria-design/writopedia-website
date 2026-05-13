@@ -62,7 +62,7 @@ export default function FeaturesGrid() {
               transition={{ duration: 0.5, delay: feature.delay }}
               className={`glass-card rounded-2xl p-8 flex flex-col group hover:bg-surface-hover/50 transition-colors ${feature.colSpan}`}
             >
-              <div className="w-12 h-12 rounded-xl bg-surface border border-surface-border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-accent-blue/50 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-surface border border-surface-border flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-accent-crimson/50 transition-all">
                 <feature.icon className="w-5 h-5 text-secondary group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-xl font-display font-medium mb-3">{feature.title}</h3>
@@ -75,8 +75,8 @@ export default function FeaturesGrid() {
       </div>
       
       {/* Decorative gradients */}
-      <div className="absolute top-1/2 left-0 w-[40vw] h-[40vw] bg-accent-blue/5 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
-      <div className="absolute top-1/2 right-0 w-[30vw] h-[30vw] bg-accent-violet/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-[40vw] h-[40vw] bg-accent-crimson/5 rounded-full blur-[100px] -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-[30vw] h-[30vw] bg-accent-rose/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
     </section>
   );
 }

@@ -16,11 +16,11 @@ export default function BrandDNA() {
             className="relative"
           >
             <div className="aspect-square w-full max-w-md mx-auto relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent-violet/20 via-transparent to-accent-cyan/20 rounded-full blur-3xl animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-accent-rose/20 via-transparent to-accent-crimson/20 rounded-full blur-3xl animate-pulse" />
               
               <div className="absolute inset-0 border border-surface-border rounded-full flex items-center justify-center">
                 <div className="absolute w-[80%] h-[80%] border border-surface-border rounded-full flex items-center justify-center border-dashed">
-                  <div className="absolute w-[60%] h-[60%] border border-accent-blue/30 rounded-full flex items-center justify-center bg-accent-blue/5">
+                  <div className="absolute w-[60%] h-[60%] border border-accent-crimson/30 rounded-full flex items-center justify-center bg-accent-crimson/5">
                      <div className="w-24 h-24 bg-background border border-surface-border rounded-full flex items-center justify-center shadow-2xl relative z-10">
                         <BrainCircuit className="w-10 h-10 text-primary" />
                      </div>
@@ -44,7 +44,7 @@ export default function BrandDNA() {
                 className="absolute inset-[10%]"
               >
                 <div className="absolute top-1/2 right-0 -mt-5 w-10 h-10 bg-surface border border-surface-border rounded-full flex items-center justify-center -translate-x-1/2 translate-x-full shadow-lg">
-                  <Database className="w-4 h-4 text-accent-cyan" />
+                  <Database className="w-4 h-4 text-accent-crimson" />
                 </div>
               </motion.div>
             </div>
@@ -64,7 +64,7 @@ export default function BrandDNA() {
             <div className="space-y-6">
                <div className="flex gap-4">
                   <div className="mt-1 w-10 h-10 rounded-full bg-surface border border-surface-border flex items-center justify-center shrink-0">
-                    <Zap className="w-4 h-4 text-accent-blue" />
+                    <Zap className="w-4 h-4 text-accent-crimson" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-primary mb-1">Instant Onboarding</h4>
@@ -74,7 +74,7 @@ export default function BrandDNA() {
                
                <div className="flex gap-4">
                   <div className="mt-1 w-10 h-10 rounded-full bg-surface border border-surface-border flex items-center justify-center shrink-0">
-                    <Database className="w-4 h-4 text-accent-violet" />
+                    <Database className="w-4 h-4 text-accent-rose" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-primary mb-1">Bespoke AI Fine-Tuning</h4>
@@ -84,7 +84,7 @@ export default function BrandDNA() {
 
                <div className="flex gap-4">
                   <div className="mt-1 w-10 h-10 rounded-full bg-surface border border-surface-border flex items-center justify-center shrink-0">
-                    <MapPin className="w-4 h-4 text-accent-cyan" />
+                    <MapPin className="w-4 h-4 text-accent-crimson" />
                   </div>
                   <div>
                     <h4 className="text-lg font-medium text-primary mb-1">Hyper-Local Precision</h4>

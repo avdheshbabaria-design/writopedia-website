@@ -60,7 +60,7 @@ export default function WhyWins() {
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none" />
               
               <div className="mb-6 w-12 h-12 bg-background border border-surface-border rounded-xl flex items-center justify-center">
-                 <reason.icon className="w-6 h-6 text-primary group-hover:text-accent-blue transition-colors" />
+                 <reason.icon className="w-6 h-6 text-primary group-hover:text-accent-crimson transition-colors" />
               </div>
               <h3 className="text-xl font-medium mb-3 text-primary">{reason.title}</h3>
               <p className="text-secondary leading-relaxed">

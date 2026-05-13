@@ -6,7 +6,7 @@ export default function CtaSection() {
     <section className="py-32 relative overflow-hidden">
        {/* Background */}
        <div className="absolute inset-0 bg-surface">
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl aspect-square bg-gradient-to-tr from-accent-blue/10 via-accent-violet/10 to-transparent rounded-full blur-[100px] pointer-events-none" />
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl aspect-square bg-gradient-to-tr from-accent-crimson/10 via-accent-rose/10 to-transparent rounded-full blur-[100px] pointer-events-none" />
        </div>
 
        <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
@@ -24,12 +24,11 @@ export default function CtaSection() {
              Transform your campaign workflow with intelligent, brand-trained creative agents.
            </p>
 
-           <button className="group relative px-10 py-5 bg-primary text-background font-medium rounded-full overflow-hidden transition-all hover:scale-[1.02] text-lg">
+           <button className="group relative px-10 py-5 bg-accent-crimson text-white font-medium rounded-full overflow-hidden transition-all hover:scale-[1.02] hover:bg-accent-rose shadow-xl shadow-accent-crimson/20 text-lg">
              <span className="relative z-10 flex items-center justify-center gap-2">
                Book Your Live Demo
                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
              </span>
-             <div className="absolute inset-0 bg-gradient-to-r from-accent-blue via-accent-violet to-accent-cyan opacity-0 group-hover:opacity-20 transition-opacity" />
            </button>
            
            <p className="mt-6 text-sm text-secondary">

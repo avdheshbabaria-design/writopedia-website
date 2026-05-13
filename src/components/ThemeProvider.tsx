@@ -10,17 +10,20 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark');
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
     const saved = localStorage.getItem('writopedia-theme') as Theme | null;
     if (saved) {
       setTheme(saved);
-      if (saved === 'light') {
-        document.documentElement.classList.add('light');
+      if (saved === 'dark') {
+        document.documentElement.classList.add('dark');
       } else {
-        document.documentElement.classList.remove('light');
+        document.documentElement.classList.remove('dark');
       }
+    } else {
+      // Default to light
+      document.documentElement.classList.remove('dark');
     }
   }, []);
 
@@ -28,10 +31,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme(prev => {
       const newTheme = prev === 'dark' ? 'light' : 'dark';
       localStorage.setItem('writopedia-theme', newTheme);
-      if (newTheme === 'light') {
-        document.documentElement.classList.add('light');
+      if (newTheme === 'dark') {
+        document.documentElement.classList.add('dark');
       } else {
-        document.documentElement.classList.remove('light');
+        document.documentElement.classList.remove('dark');
       }
       return newTheme;
     });

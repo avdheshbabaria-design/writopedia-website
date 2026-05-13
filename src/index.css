@@ -2,29 +2,6 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #050505;
-  --color-surf: #0a0a0a;
-  --color-surf-hover: #141414;
-  --color-surf-border: #1f1f1f;
-  
-  --color-pri: #ffffff;
-  --color-sec: #a3a3a3;
-  --color-acc-blue: #2563eb;
-  --color-acc-violet: #8b5cf6;
-  --color-acc-cyan: #06b6d4;
-
-  --glass-bg: rgba(10, 10, 10, 0.6);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  
-  --text-gradient-start: #fff;
-  --text-gradient-end: #a3a3a3;
-  
-  --scrollbar-track: var(--color-bg);
-  --scrollbar-thumb: var(--color-surf-border);
-  --scrollbar-thumb-hover: #333;
-}
-
-.light {
   --color-bg: #fafafa;
   --color-surf: #ffffff;
   --color-surf-hover: #f4f4f5;
@@ -32,6 +9,9 @@
   
   --color-pri: #09090b;
   --color-sec: #52525b;
+
+  --color-acc-crimson: #df163e;
+  --color-acc-rose: #f43f5e;
 
   --glass-bg: rgba(255, 255, 255, 0.6);
   --glass-border: rgba(0, 0, 0, 0.05);
@@ -42,6 +22,26 @@
   --scrollbar-track: var(--color-bg);
   --scrollbar-thumb: #d4d4d8;
   --scrollbar-thumb-hover: #a1a1aa;
+}
+
+.dark {
+  --color-bg: #050505;
+  --color-surf: #0a0a0a;
+  --color-surf-hover: #141414;
+  --color-surf-border: #1f1f1f;
+  
+  --color-pri: #ffffff;
+  --color-sec: #a3a3a3;
+
+  --glass-bg: rgba(10, 10, 10, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+
+  --text-gradient-start: #fff;
+  --text-gradient-end: #a3a3a3;
+
+  --scrollbar-track: var(--color-bg);
+  --scrollbar-thumb: var(--color-surf-border);
+  --scrollbar-thumb-hover: #333;
 }
 
 @theme {
@@ -55,9 +55,8 @@
   
   --color-primary: var(--color-pri);
   --color-secondary: var(--color-sec);
-  --color-accent-blue: var(--color-acc-blue);
-  --color-accent-violet: var(--color-acc-violet);
-  --color-accent-cyan: var(--color-acc-cyan);
+  --color-accent-crimson: var(--color-acc-crimson);
+  --color-accent-rose: var(--color-acc-rose);
 
   --animate-text-shimmer: text-shimmer 2.5s ease-out infinite alternate;
   --animate-marquee: marquee 30s linear infinite;
@@ -123,7 +122,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(135deg, var(--color-accent-blue) 0%, var(--color-accent-violet) 50%, var(--color-accent-cyan) 100%);
+  background-image: linear-gradient(135deg, var(--color-acc-crimson) 0%, var(--color-acc-rose) 100%);
 }
 
 /* Custom scrollbar */

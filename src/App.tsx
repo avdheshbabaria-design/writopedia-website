@@ -41,7 +41,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-background text-primary selection:bg-accent-violet/30 transition-colors duration-300">
+      <div className="min-h-screen bg-background text-primary selection:bg-accent-crimson/30 transition-colors duration-300">
         <Navbar />
         <main>
           <Hero />

@@ -16,8 +16,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute top-1/4 -left-1/4 w-[500px] h-[500px] bg-accent-violet/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
-      <div className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-accent-blue/10 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+      <div className="absolute top-1/4 -left-1/4 w-[500px] h-[500px] bg-accent-rose/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+      <div className="absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] bg-accent-crimson/10 rounded-full blur-[120px] mix-blend-screen opacity-50" />
       
       <div className="container mx-auto px-6 relative z-10 w-full max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -29,7 +29,7 @@ export default function Hero() {
             className="flex flex-col items-start gap-8"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-surface-border bg-surface w-fit text-sm font-medium">
-              <Sparkles className="w-4 h-4 text-accent-cyan" />
+              <Sparkles className="w-4 h-4 text-accent-crimson" />
               <span className="text-secondary">Writopedia AI 2.0 is live</span>
             </div>
             
@@ -42,12 +42,11 @@ export default function Hero() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <button className="w-full sm:w-auto group relative px-8 py-4 bg-primary text-background font-medium rounded-full overflow-hidden transition-all hover:scale-[1.02]">
+              <button className="w-full sm:w-auto group relative px-8 py-4 bg-accent-crimson text-white font-medium rounded-full overflow-hidden transition-all hover:scale-[1.02] hover:bg-accent-rose shadow-lg shadow-accent-crimson/20">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   Book Your Live Demo
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-accent-blue via-accent-violet to-accent-cyan opacity-0 group-hover:opacity-20 transition-opacity" />
               </button>
               <button className="w-full sm:w-auto px-8 py-4 bg-surface hover:bg-surface-hover border border-surface-border text-primary font-medium rounded-full transition-colors flex items-center justify-center gap-2">
                 Watch the Agent in Action
@@ -63,7 +62,7 @@ export default function Hero() {
             className="relative lg:h-[600px] w-full flex items-center justify-center mt-12 lg:mt-0"
           >
             <div className="w-full relative max-w-lg aspect-[9/16] rounded-3xl overflow-hidden glass-card border-surface-border">
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent-blue/20 to-accent-violet/20 opacity-50 z-0" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-accent-crimson/20 to-accent-rose/20 opacity-50 z-0" />
               
               <video 
                 ref={videoRef}
@@ -81,25 +80,6 @@ export default function Hero() {
               >
                 {isMuted ? <VolumeX className="w-5 h-5 opacity-80" /> : <Volume2 className="w-5 h-5" />}
               </button>
-              
-              {/* Floating elements */}
-              <motion.div 
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -right-4 md:-right-6 top-12 glass-card px-4 py-2 rounded-xl text-xs font-medium text-primary flex items-center gap-2 border-surface-border z-20 shadow-2xl"
-              >
-                <div className="w-2 h-2 rounded-full bg-accent-blue animate-pulse" />
-                Hyper-Local Dialect
-              </motion.div>
-              
-              <motion.div 
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-                className="absolute -left-4 md:-left-8 bottom-24 glass-card px-4 py-2 rounded-xl text-xs font-medium text-primary flex items-center gap-2 border-surface-border z-20 shadow-2xl"
-              >
-                <div className="w-2 h-2 rounded-full bg-accent-violet animate-pulse" />
-                Brand Guidelines Applied
-              </motion.div>
             </div>
           </motion.div>
         </div>

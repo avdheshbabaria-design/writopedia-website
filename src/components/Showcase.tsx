@@ -57,7 +57,7 @@ export default function Showcase() {
            >
               {activeTab === 'video' && (
                 <div className="w-full h-full relative rounded-2xl overflow-hidden bg-background">
-                   <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 to-accent-cyan/10" />
+                   <div className="absolute inset-0 bg-gradient-to-br from-accent-crimson/10 to-accent-rose/10" />
                    <div className="absolute inset-0 flex items-center justify-center">
                      <div className="w-16 h-16 rounded-full bg-primary/10 backdrop-blur-md flex items-center justify-center border border-white/20 cursor-pointer hover:scale-110 transition-transform">
                        <PlayCircle className="w-8 h-8 text-white" />
@@ -65,7 +65,7 @@ export default function Showcase() {
                    </div>
                    <div className="absolute bottom-6 left-6 right-6">
                      <div className="h-1 w-full bg-white/20 rounded-full overflow-hidden">
-                       <div className="h-full w-1/3 bg-accent-blue rounded-full" />
+                       <div className="h-full w-1/3 bg-accent-crimson rounded-full" />
                      </div>
                    </div>
                 </div>
@@ -75,7 +75,7 @@ export default function Showcase() {
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full h-full">
                    {[1,2,3,4].map(i => (
                      <div key={i} className="bg-background rounded-2xl overflow-hidden relative">
-                       <div className="absolute inset-0 bg-gradient-to-br from-accent-violet/10 to-transparent" />
+                       <div className="absolute inset-0 bg-gradient-to-br from-accent-rose/10 to-transparent" />
                      </div>
                    ))}
                 </div>
