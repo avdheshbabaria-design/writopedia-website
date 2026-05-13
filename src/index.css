@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-bg: #050505;
+  --color-surf: #0a0a0a;
+  --color-surf-hover: #141414;
+  --color-surf-border: #1f1f1f;
+  
+  --color-pri: #ffffff;
+  --color-sec: #a3a3a3;
+  --color-acc-blue: #2563eb;
+  --color-acc-violet: #8b5cf6;
+  --color-acc-cyan: #06b6d4;
+
+  --glass-bg: rgba(10, 10, 10, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  
+  --text-gradient-start: #fff;
+  --text-gradient-end: #a3a3a3;
+  
+  --scrollbar-track: var(--color-bg);
+  --scrollbar-thumb: var(--color-surf-border);
+  --scrollbar-thumb-hover: #333;
+}
+
+.light {
+  --color-bg: #fafafa;
+  --color-surf: #ffffff;
+  --color-surf-hover: #f4f4f5;
+  --color-surf-border: #e4e4e7;
+  
+  --color-pri: #09090b;
+  --color-sec: #52525b;
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(0, 0, 0, 0.05);
+
+  --text-gradient-start: #09090b;
+  --text-gradient-end: #52525b;
+
+  --scrollbar-track: var(--color-bg);
+  --scrollbar-thumb: #d4d4d8;
+  --scrollbar-thumb-hover: #a1a1aa;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+
+  --color-background: var(--color-bg);
+  --color-surface: var(--color-surf);
+  --color-surface-hover: var(--color-surf-hover);
+  --color-surface-border: var(--color-surf-border);
+  
+  --color-primary: var(--color-pri);
+  --color-secondary: var(--color-sec);
+  --color-accent-blue: var(--color-acc-blue);
+  --color-accent-violet: var(--color-acc-violet);
+  --color-accent-cyan: var(--color-acc-cyan);
+
+  --animate-text-shimmer: text-shimmer 2.5s ease-out infinite alternate;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes text-shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); /* Softened shadow */
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, var(--text-gradient-start) 0%, var(--text-gradient-end) 100%);
+}
+
+.text-gradient-accent {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, var(--color-accent-blue) 0%, var(--color-accent-violet) 50%, var(--color-accent-cyan) 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
